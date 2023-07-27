@@ -37,10 +37,10 @@
 <body class="max-w-full mx-auto font-lato">
     <main class="container p-0 lg:p-10">
         <!-- Nav section starts here -->
-        <nav class="max-w-full mx-auto mb-5">
+        <nav class="max-w-full mx-auto mb-5 hidden md:block">
             <div class="navbar bg-[#F85559] rounded-full items-center px-12 py-3 mx-auto">
                 <div class="navbar-start">
-                    <div class="flex gap-2 p-0 lg:gap-10 mt-3 p-2 text-white list-none rounded-box">
+                    <div class="flex lg:gap-2 p-0 xl:gap-10 mt-3 p-2 text-white list-none rounded-box">
                         <li><a href="">Home</a></li>
                         <li><a href="">About Us</a></li>
                         <li><a href="">Shop</a></li>
@@ -52,21 +52,51 @@
                     <a class="text-white text-4xl normal-case">Fruit Burst</a>
                 </div>
                 <div class="navbar-end relative">
-                    <input class="rounded-xl" type="search" name="" placeholder="  Search here   " id=""><span class="absolute right-2"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input class="rounded-xl" type="search" name="" placeholder="  Search here   " id=""><span
+                        class="absolute right-2"><i class="fa-solid fa-magnifying-glass"></i></span>
                 </div>
             </div>
         </nav>
+
+        <!-- for sm device -->
+        <div class=" block md:hidden">
+            <div class="flex justify-between">
+                <div class="flex justify-start">
+                    <img class="w-10 h-10" src="./images/logo.png" alt="Navbar Logo">
+                    <a class="text-[#121212] text-2xl font-extrabold normal-case">Fruit Burst</a>
+                </div>
+
+                <div class="">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost btn-circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h7" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a href="">Home</a></li>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Shop</a></li>
+                            <li><a href="">All Fruits</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Nav section ends here -->
 
         <!-- Banner section starts here -->
         <section class="relative z-10 max-w-full">
             <!-- Banner title section -->
             <div
-                class="text-center absolute z-20 space-y-2 top-5 left-20 sm:top-3 left-32 space-y-1 md:left-48 top-24 space-y-4 lg:left-96 xl:top-24">
+                class="text-center absolute z-20 space-y-0 top-5 left-20 sm:top-3 left-32 space-y-1 md:left-48 top-24 space-y-4 lg:left-96 xl:top-24">
 
                 <h1 class="text-lg md:text-5xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
-                <p class="text-white font-medium">We supply highly quality organic products</p>
-                <button class="bg-[#F85559] px-1 py-0 md:px-5 py-4 rounded-lg font-bold text-white">Shop Now</button>
+                <p class="text-white m-0 font-medium">We supply highly quality organic products</p>
+                <button class="bg-[#F85559] px-1 py-0 md:px-5 py-4 rounded-lg md:font-semibold lg:font-bold text-white">Shop Now</button>
                 <!-- carousel section -->
             </div>
             <div class="carousel w-full z-10">
@@ -107,7 +137,7 @@
         </section>
         <!-- Banner section starts here -->
         <!-- More productive section starts -->
-        <section class="w-4/6 h-auto mx-auto relative md:z-10">
+        <section class="w-4/6 h-auto mx-auto relative md:z-10 hidden md:block">
             <div class="flex md:justify-center  absolute -top-12 z-20 bg-white rounded-lg">
 
                 <div>
@@ -535,7 +565,7 @@
                     <img class="w-10 h-10" src="./images/logo.png" alt="Navbar Logo">
                     <a class="text-white text-4xl normal-case">Fruit Burst</a>
                 </div>
-                <div class="text-white text-center my-7 space-x-7">
+                <div class="text-white text-center my-7 space-x-2 lg:space-x-7">
                     <a href="">Home</a>
                     <a href="">About Us</a>
                     <a href="">Shop</a>
